@@ -20,6 +20,23 @@
             "args": [
                 "${workspaceFolder}\\index.ts"
             ],
+        },
+        {
+            "type": "node",
+            "name": "Launch Single Script",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "-r", 
+                "ts-node/register", 
+                "--experimental-loader",
+                "ts-node/esm"
+            ],
+            "args": [
+                "${workspaceFolder}\\src\\open_ai\\generate_parser.mts"
+            ],
         }
     ]
 }
