@@ -27,7 +27,7 @@ async function defaultOpenAiGenerate(message: string): Promise<string | null> {
                 temperature: 1,
                 max_tokens: 1024,
                 top_p: 1,
-                best_of: 5,
+                best_of: 10,
                 frequency_penalty: 1,
                 presence_penalty: 1,
             }
