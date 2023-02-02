@@ -2,7 +2,6 @@ import { REST, Routes, Client, GatewayIntentBits, Collection } from 'discord.js'
 import { GeneralCommands, GeneralCommandsJson } from './src/commands/command_handling.mjs';
 import { GeneralEvents } from './src/events/event_handling.mjs';
 import * as env from './src/env_data.mjs';
-// import "./server.mjs";
 
 const rest = new REST({ version: '10' }).setToken(env.DISCORD_TOKEN);
 const client = new Client({

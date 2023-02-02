@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node --esm .\\index.ts"
+    "start": "npx ts-node --esm .\\index.ts",
+    "start_esm": "node -r ts-node/register --experimental-loader ts-node/esm .\\index.ts"
   },
   "author": "",
   "license": "ISC",
