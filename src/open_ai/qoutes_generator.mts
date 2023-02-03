@@ -53,6 +53,8 @@ async function defaultOpenAiGenerate(message: string): Promise<string | null> {
         return null;
     }
     catch (error) {
+        console.log(error);
+
         return null;
     }
 }
