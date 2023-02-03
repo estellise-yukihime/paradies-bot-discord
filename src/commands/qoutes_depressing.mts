@@ -4,7 +4,7 @@ import { CommandData } from "./command_types.mjs";
 
 export const qoutes_depressing: CommandData = {
     data: new SlashCommandBuilder()
-        .setName('qoutes-depressing')
+        .setName('qoute-depressing')
         .setDescription('Depressing qoutes for depress weebs.')
         .addStringOption(option =>
             option.setName('about')
