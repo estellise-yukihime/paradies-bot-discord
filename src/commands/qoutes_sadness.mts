@@ -5,7 +5,7 @@ import { CommandData } from "./command_types.mjs";
 export const qoutes_sadness: CommandData = {
     data: new SlashCommandBuilder()
         .setName('qoute-sadness')
-        .setDescription('Sadness qoutes for sad people')
+        .setDescription('Sadness qoute for sad people')
         .addStringOption(option => {
             return option.setName('about')
                 .setDescription('The sadness you want.')

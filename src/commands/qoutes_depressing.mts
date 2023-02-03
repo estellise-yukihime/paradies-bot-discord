@@ -5,12 +5,12 @@ import { CommandData } from "./command_types.mjs";
 export const qoutes_depressing: CommandData = {
     data: new SlashCommandBuilder()
         .setName('qoute-depressing')
-        .setDescription('Depressing qoutes for depress weebs.')
-        .addStringOption(option =>
-            option.setName('about')
-                .setDescription('The depressing thoughts you want.')
+        .setDescription('Depressing qoute for depress weebs.')
+        .addStringOption(option => {
+            return option.setName('about')
+                .setDescription('The depressing thought you want.')
                 .setRequired(true)
-        ),
+        }),
     async execute(interaction: ChatInputCommandInteraction<CacheType>): Promise<void> {
         await interaction.deferReply();
 

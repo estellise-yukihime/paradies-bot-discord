@@ -25,9 +25,9 @@ async function defaultOpenAiGenerate(message: string): Promise<string | null> {
                 model: 'text-davinci-003',
                 prompt: message,
                 temperature: 1,
-                max_tokens: 1024,
+                max_tokens: 512,
                 top_p: 1,
-                best_of: 15,
+                best_of: 3,
                 frequency_penalty: 1,
                 presence_penalty: 1,
             }
